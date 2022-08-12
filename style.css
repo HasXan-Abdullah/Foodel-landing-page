@@ -1,0 +1,678 @@
+@font-face {
+  font-family: Roboto;
+
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+   
+}
+@font-face {
+  font-family: OpenSans;
+
+  
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+
+}
+@font-face {
+  font-family: OpenSans-semibold;
+
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+
+  
+
+}
+
+* {
+  font-family: Roboto,OpenSans,OpenSans-semibold;
+}
+body {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+p{
+ 
+  font-size: 16px;
+}
+ 
+/* /////////////////////////////////
+//                             //
+// Navbar Section css Styling  //
+//                             //
+///////////////////////////////// */
+ .navbar{
+  margin-left:10% ;
+ }
+ .collapse{
+   margin-left: 25%;
+  justify-content: center;
+ }
+ .nav-item>a{
+ font-family:OpenSans ;
+ }
+ .partner>a{
+  margin-top: 10px;
+  color: #000000;
+ }
+
+.btn:hover{
+color: white;
+}
+.btn {
+  border: none;
+  padding: 25x 14px 14px 25px;
+  font-family:OpenSans;
+  font-size: 16px;
+  width: 100px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
+}
+.btnNav{
+  display: none;
+  border: none;
+  padding: 10px;
+  font-family:OpenSans;
+  font-size: 16px;
+  width: 50px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  border-radius: 50%;
+}
+@media screen and (max-width: 975px) {
+  .collapse{
+    margin-left:0%;
+   justify-content: center;
+  }
+  .navbar{
+    margin-left:00% ;
+   }
+  .btnNav{
+    display:inline;
+  }
+  .btnLogin{
+    display: none;
+  }
+  .navbar{
+    width: 100%;
+  }
+   .container{
+    width: 100%;
+   }
+    .logodiv {
+        width: 100%;
+        display: flex;
+      
+        justify-content: space-between;
+      }
+    .logo-r {
+        margin-right: 0%;
+      }
+      .logo-r>img {
+        width: 100%;
+      }
+    
+   
+  }
+/* /////////////////////////////////
+//                             //
+// intor Section css Styling  //
+//                             //
+///////////////////////////////// */
+.highlight {
+  color: #F90811;
+}
+h1 {
+  font-weight: bold;
+  color: #323232;
+  font-size: 45px;
+  font-family: OpenSans;
+}
+.intro-text {
+  line-height:3.5vmin;
+  margin-top: 60px;
+}
+ 
+.intro-img > img {
+  
+  margin-left: 100px;
+  max-width: 568px;
+  max-height: 503px;
+}
+@media screen and (max-width: 975px) {
+    
+      .intro-img > img {
+        margin-left: 0px;
+        max-width: 100%;
+        max-height: auto;
+      }
+      .intro-text {
+        line-height:3vmax;
+        margin-top: 60px;
+      }
+}
+
+/* /////////////////////////////////
+//                             //
+// Mobile Section css Styling  //
+//                             //
+///////////////////////////////// */
+#food-business {
+  width: 100%;
+  background-color: white;
+}
+.food-business-heading{
+  width: 50%;
+}
+.mobile-div > h1 {
+  text-align: center;
+}
+.mobile-div{
+  text-align: center;
+  justify-content: center;
+}
+.boader-numbers {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+
+  padding-top: 28px;
+  margin-top: 45px;
+
+  text-align: center;
+  border-radius: 20%;
+}
+.boader-numbers > img {
+  width: 50px;
+}
+.sideDiv {
+  margin-top: 65px;
+}
+ 
+.l-sideDiv-text > p {
+  margin-top:-50px ;
+  margin-left: -275%;
+  width: 250px;
+  text-align: right;
+}
+
+.r-sideDiv-text > p {
+  width: 250px;
+  margin-left: 120%;
+  margin-top: -50%;
+  text-align: left;
+}
+
+.circle-l {
+  z-index: 1;
+  position: absolute;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 1px;
+  width: 29px;
+  height: 30px;
+  margin-left: 85px;
+  margin-top: -37px;
+}
+.circle-r {
+  z-index: 1;
+  position: absolute;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 1px;
+  width: 29px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -40px;
+}
+
+.mobileViewDiv{
+  display: none;
+}
+@media screen and (max-width: 975px) {
+
+  .food-business-heading{
+    width: 100%;
+  }
+  .row{
+    display: block;
+    
+  }
+  .boader-numbers {
+     margin-left:10% ;
+     
+    width: 90px;
+    height: 90px;
+  }
+  .boader-numbers > img {
+    width: 30px;
+  }
+  .mobile-div{
+    width: 100%;
+    display: block;
+  }
+  
+    .sideDiv {
+        margin-left: 5px;
+        
+       
+      }
+      .sideDiv-l{
+        margin-left: 5px;
+        padding-right: 0%;
+        display: block;
+      }
+      .l-sideDiv-text > p {
+       margin-top: -70%;
+        width: 200px;
+        text-align: left;
+        margin-left: 120%;
+      }
+      .circle-l {
+      
+        margin-left: -15px;
+         margin-top: -40px;
+      }
+      .r-sideDiv-text > p{
+        width: 200px;
+        margin-top: -70%;
+      }
+      .webViewMobile{
+        display: none;
+      }
+      .mobileViewDiv{
+        margin-left: -5%;
+        display: block;
+      }
+}
+/* //////////////////////////////////////
+//                                     //
+// Pricing Model Section css Styling  //
+//                                   //
+/////////////////////////////////////// */
+#priceing-models {
+  background-color: white;
+}
+.pricing {
+  margin-bottom: 3%;
+  text-align: center;
+}
+.price-modal-text{
+   margin-top: 2%;
+   padding-bottom: 3%;
+}
+.price-model-div {
+  
+  border-radius: 30px;
+  border: 1px solid #F90811;
+}
+.price-model-div > div > img {
+  width: 90px;
+  margin: 20px;
+  padding: 5px;
+}
+.price-model-div > div > p {
+  margin-top: 6%;
+  color: #323232;
+  font-size: 24px;
+
+}
+.Or {
+  margin: 30px 40px 0 40px;
+}
+.Or > h1 {
+  font-family:OpenSans;
+ 
+  font-size: 45px;
+}
+ 
+@media screen and (max-width: 975px) {
+   p{
+    font-size: 14px;
+    font-family: Roboto;
+   }
+    .price{
+        display: block;
+        text-align: center;
+        margin-left: 15%;
+    }
+    .price-model-div {
+      text-align: center;
+      width:80%;
+
+       margin: 5px;
+       padding: 0px;
+      }
+      .price-model-div > div > p {
+        margin-top: 9%;
+        
+        margin-left: 25px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+}
+
+/* ///////////////////////////////////////////
+//                                          //
+// seemless-operations Section css Styling  //
+//                                         //
+///////////////////////////////////////////// */
+
+ .seemless{
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+ .seemless-heading {
+  margin-top: 3%;
+  text-align: center;
+}
+.seemless-cards{
+   text-align: center;
+  background-color: white;
+}
+
+ .seemless-text-p{
+  padding: 10%;
+  margin-top: 15%;
+}/*
+.seemless-text-p2{
+  margin-top: 19%;
+}
+.seemless-text-p3{
+  margin-top: 17%;
+} */
+@media screen and (max-width: 975px) {
+  .seemless{
+    margin-left: 0%;
+    margin-right: 0%;
+   }
+.seemless-cards{
+  margin-top: 10px;
+  
+  background-color: white;
+}
+
+}
+/* ///////////////////////////////////////////
+//                                          //
+// order calculator   Section css Styling  //
+//                                         //
+///////////////////////////////////////////// */
+.modal-content{
+  border-radius:5%;
+}
+.order-heading{
+  width: 110%;
+}
+.modal-close-btn{
+  margin: 10px;
+  text-align: right;
+}
+.btnclose{
+  
+  width: 30px;
+  background-color: #707070;
+  border-radius: 20px;
+  border: none;
+  color: rgb(255, 255, 255);
+ 
+}
+.modal-table{
+  margin-bottom:10px ;
+  margin-top: 25px;
+  margin-left: 25%;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+  border: 1px solid red;
+}
+th{
+  color: white;
+   text-align: center;
+  padding: 8px;
+  background-color: red;
+  border: 1px solid rgb(255, 255, 255);
+}
+td{
+   text-align: center;
+  padding: 8px;
+  border: 1px solid #707070;
+}
+ 
+
+
+#order-cal {
+  background-color: white;
+}
+.order {
+  margin-top: 70px;
+}
+.cal-img {
+  margin-top: 70px;
+  margin-left: 70px;
+  width: 500px;
+  margin-bottom: 90px;
+}
+.card2 {
+  width: 370px;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.calinput{
+   padding: 20px;
+  height:10mm;
+}
+.order-label{
+  color: #646464;
+}
+.cardbtn {
+  margin-top: 8px;
+  margin-left: 90px;
+}
+
+.form-control {
+  background-color:#F5F5F5;
+  border-radius: 5px;
+}
+@media screen and (max-width: 975px) {
+  .order-heading{
+    width: 100%;
+  }
+    .cal-img {
+        margin-top: 70px;
+        width: 300px;
+        margin-bottom: 90px;
+      }
+      .card2 {
+         width: 300px;
+        margin-right: 15px;
+        padding: 10px;
+    
+      }
+}
+
+/* ///////////////////////////////////////////
+//                                          //
+// Contact     card    Section css Styling  //
+//                                         //
+///////////////////////////////////////////// */
+
+.card-contact {
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  box-shadow: 10px 10px 10px 0px rgba(82,73,73,0.02);
+}
+.conImageDiv {
+  
+  margin-top: 59px;
+  margin-right: 50px;
+}
+@media screen and (max-width: 975px) {
+    .conImage {
+       width: 300px;
+       margin-left: 15px;
+      }
+}
+
+/* ///////////////////////////////////////////
+//                                          //
+// multiple card      Section css Styling  //
+//                                         //
+///////////////////////////////////////////// */
+
+#cards {
+  background-color: white;
+  padding: 80px 0;
+}
+.mulCard-heading {
+  text-align: center;
+}
+
+.multipleCards {
+  text-align: center;
+  justify-content: center;
+}
+.boarder > img {
+  width: 90px;
+  padding: 5px;
+}
+.boarder {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(194, 194, 194);
+  margin-left: 90px;
+
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 20%;
+}
+
+/* new */
+.icon-box {
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(82,73,73,0.02);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(82,73,73,0.02);
+  box-shadow: 10px 10px 10px 0px rgba(82,73,73,0.02);
+border-radius: 35px;
+padding: 30px;
+border: 1px solid #ECECEC;
+}
+.service-heading{
+   
+  margin: auto;
+}
+
+
+/* ///////////////////////////////////////////
+//                                          //
+// joinus    card      Section css Styling  //
+//                                         //
+///////////////////////////////////////////// */
+ 
+.joinUs {
+ 
+  border-radius: 20px;
+   background-image: url(/Images/Group\ 49.png);
+   background-position:center;
+   background-size: cover;
+
+   
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-bottom: 90px;
+}
+.joinP{
+    margin-left: 20%;
+    direction: ltr;
+    font-weight: 900;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    font-size: 34px;
+}
+.btnblack {
+    margin-top: 25%;
+    margin-left: 20%;
+    width: 120px;
+    height: 40px;
+  border: none;
+  font-size: 18px;
+  padding: 0px 15px 2px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+  border-radius: 20px;
+}
+@media screen and (max-width: 975px) {
+    .joinUs{
+        text-align: center;
+         justify-content: center;
+         background-position:center;
+         display: block;
+         
+      
+    }
+    
+    .joinP{
+         
+        padding-top: 12%;
+        margin-left: 5%;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .btnblack{
+        margin-left: 0%;
+         margin-top: 0%;
+        margin-bottom: 2%;
+    
+    }
+    .card{
+        margin-left: 10%;
+    }
+}
+
+/* ///////////////////////////////////////////
+//                                          //
+// FOOTER                Section css Styling  //
+//                                         //
+///////////////////////////////////////////// */
+
+.social-handels {
+  margin: 8px;
+}
+.afterhr {
+  text-align: center;
+  justify-content: center;
+}
+.copy-right {
+  color: rgb(104, 104, 104);
+  margin-top: 5px;
+}
+h3{
+  color: red;
+  margin-top: 5px;
+  font-size: 19px;
+}
+@media screen and (max-width:975px) {
+  .footer-div{
+    display: block;
+    text-align: center;
+  }
+}
+
+
+ 
+  
+
