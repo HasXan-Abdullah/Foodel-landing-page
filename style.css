@@ -31,6 +31,16 @@ p{
  
   font-size: 16px;
 }
+@media screen and (max-width: 975px) {
+  p{
+    font-family: Roboto;
+    font-size: 14px;
+  }
+  h1{
+    font-family: OpenSans;
+    font-size: 25px;
+  }
+}
  
 /* /////////////////////////////////
 //                             //
@@ -141,7 +151,9 @@ h1 {
   max-height: 503px;
 }
 @media screen and (max-width: 975px) {
-    
+     .intro-heading-text>h1{
+      font-size: 35px;
+     }
       .intro-img > img {
         margin-left: 0px;
         max-width: 100%;
@@ -237,8 +249,12 @@ h1 {
   display: none;
 }
 @media screen and (max-width: 975px) {
-
+  .food-business-heading>h1{
+    
+    font-size: 25px;
+  }
   .food-business-heading{
+  
     width: 100%;
   }
   .row{
@@ -309,19 +325,22 @@ h1 {
    padding-bottom: 3%;
 }
 .price-model-div {
-  
+  cursor: pointer;
+  display: flex;
   border-radius: 30px;
   border: 1px solid #F90811;
 }
-.price-model-div > div > img {
-  width: 90px;
+.price-model-div > img {
+  width: 118px;
   margin: 20px;
-  padding: 5px;
+  padding: 1px;
+  height: 118px;
 }
-.price-model-div > div > p {
-  margin-top: 6%;
+.price-model-div  > p {
+  margin-top: 5%;
+  
   color: #323232;
-  font-size: 24px;
+  font-size: 35px;
 
 }
 .Or {
@@ -334,28 +353,39 @@ h1 {
 }
  
 @media screen and (max-width: 975px) {
+  .pricing >h1{
+    font-size:25px;
+    font-family: OpenSans;
+  }
+  .Or > h1 {
+    font-family:OpenSans;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
    p{
     font-size: 14px;
     font-family: Roboto;
    }
     .price{
-        display: block;
+        
         text-align: center;
-        margin-left: 15%;
+        
     }
     .price-model-div {
-      text-align: center;
-      width:80%;
-
-       margin: 5px;
-       padding: 0px;
+      
+      width:100%;
+      font-size: 20px;
       }
-      .price-model-div > div > p {
-        margin-top: 9%;
-        
-        margin-left: 25px;
+      .price-model-div > p {
+        margin-top: 40px;
+        font-family: OpenSans;
+        direction: ltr;
         font-size: 20px;
         font-weight: bold;
+      }
+      .price-model-div >img{
+        width: 84px;
+        height: 83px;
       }
       
 }
@@ -399,6 +429,9 @@ h1 {
   
   background-color: white;
 }
+.seemless-heading>h1 {
+font-size: 25px;
+}
 
 }
 /* ///////////////////////////////////////////
@@ -406,6 +439,7 @@ h1 {
 // order calculator   Section css Styling  //
 //                                         //
 ///////////////////////////////////////////// */
+
 .modal-content{
   border-radius:5%;
 }
@@ -485,10 +519,15 @@ td{
   background-color:#F5F5F5;
   border-radius: 5px;
 }
+.form-control:focus{
+border-color: #000000;
+}
 @media screen and (max-width: 975px) {
   .order-heading{
     width: 100%;
+    font-size: 25px
   }
+ 
     .cal-img {
         margin-top: 70px;
         width: 300px;
@@ -525,6 +564,10 @@ td{
     .conImage {
        width: 300px;
        margin-left: 15px;
+      }
+      .business-detail-heading>h1{
+        margin-top: 50px;
+        font-size: 25px;
       }
 }
 
@@ -574,6 +617,17 @@ border: 1px solid #ECECEC;
    
   margin: auto;
 }
+@media screen and (max-width: 975px) {
+  .service-heading>h1{
+   
+    font-size: 25px;
+  }
+  .icon-box {
+    margin-top: 10px;
+  }
+  
+
+}
 
 
 /* ///////////////////////////////////////////
@@ -583,7 +637,7 @@ border: 1px solid #ECECEC;
 ///////////////////////////////////////////// */
  
 .joinUs {
- 
+  margin-top: 50px;
   border-radius: 20px;
    background-image: url(/Images/Group\ 49.png);
    background-position:center;
@@ -591,20 +645,21 @@ border: 1px solid #ECECEC;
 
    
   color: rgb(255, 255, 255);
-  font-size: 25px;
+ 
   margin-bottom: 90px;
 }
 .joinP{
+  width: 100%;
     margin-left: 20%;
     direction: ltr;
     font-weight: 900;
     margin-top: 20%;
     margin-bottom: 10%;
-    font-size: 34px;
+    font-size: 35px;
 }
 .btnblack {
     margin-top: 25%;
-    margin-left: 20%;
+    margin-left: 30%;
     width: 120px;
     height: 40px;
   border: none;
